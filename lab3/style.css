@@ -1,0 +1,54 @@
+body{
+    background-color: lightcyan;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1{
+    color: black;
+    background-color: darkturquoise;
+    text-align: center;
+
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h3{
+    color: black;
+    background-color: darkturquoise;
+
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form{
+    background-color: white;
+    padding: 20px;
+    border: 2px solid darkturquoise;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button{
+    color: black;
+    background-color: #0091ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0074cc;
+    color: white;
+}
