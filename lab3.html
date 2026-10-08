@@ -1,54 +1,102 @@
-body{
-    background-color: lightcyan;
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 2: Semantic Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <header>
+        <h1>Эрүүл мэндийн эмнэлэг</h1>
+        </header>
 
-h1{
-    color: black;
-    background-color: darkturquoise;
-    text-align: center;
+        <h3>Хувийн мэдээлэлээ оруулна уу!</h3>
 
-    padding: 15px;
-    border-radius: 10px;
-}
+        <main>
+            <form action ="#" method="Post">
+            <div class="form-group">
+                <label for = "Бүтэн нэр (Овог Нэр)">Овог, Нэр:</label>             
+                <Input type = "text" id = "Бүтэн нэр" name = "Бүтэн нэр" required>
+            </div>  
+            <br>
+            
+            <div>
+                <label for = "Регистрийн дугаар">Регистрийн дугаар:</label>
+                <Input type = "text" id = "Регистрийн дугаар" name = "Регистрийн дугаар" required>
+            </div>
+            <br>
 
-h3{
-    color: black;
-    background-color: darkturquoise;
+            <div>
+                <label for = "Имэйл">Имэйл хаяг:</label>
+                <Input type = "email" id = "Имэйл" name = "Имэйл" required>
+            </div>
+            <br>
 
-    padding: 10px;
-    border-radius: 10px;
-}
+            <div>
+                <Label for = "Password (Нууц үг)">Нууц үг:</Label>
+                <Input type = "Password" id = "Password" name = "Password" required>
+            </div>
+            <br>
 
-form{
-    background-color: white;
-    padding: 20px;
-    border: 2px solid darkturquoise;
-    border-radius: 15px;
-    margin-top: 20px;
-}
+            <div>  
+                <label for = "Phone Number (Утасны дугаар)">Утасны дугаараа оруулна уу!</label>
+                <input type = "Phone number" id = "Number" name = "Number" required>
+            </div>
+            <div>
+                <label for = "Нас">Нас:</label>
+                <Input type = "Нас" id = "Нас" name = "Нас" required>
+            </div>
+            <br>
 
-input,
-select{
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
+            <div>
+                <Label for = "Хүйс">Хүйс:</Label>
+                <select id = "Хүйс" name = "Хүйс" required>
+                    <option value = "Эрэгтэй">Эрэгтэй</option>
+                    <option value = "Эмэгтэй">Эмэгтэй</option>
+                </select>
+            </div>
+            <br>
 
-button{
-    color: black;
-    background-color: #0091ff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
+            <div> 
+                <Label for = "Сонирхол">Өөрийгөө 3 үгээр илэрхийл:</Label>
+                <input type = "text" id = "Сонирхол" name = "Сонирхол" required>
+            </div>
 
-button:hover{
-    background-color: #0074cc;
-    color: white;
-}
+            <div>
+                <p>Дараах асуултаас өөрт тохирох хариуг сонгоно уу! </p>
+                <Label for = "Healthy">Эрүүл мэнд</Label>
+                <select id = "Healthy" name = "Healthy" required>
+                    <option value = "Healthy">Эрүүл</option>
+                    <option value = "NotHealthy">Асуудалтай</option>
+                </select>
+            </div>
+            <br>
+            
+            <div>
+            <h4>Үйлчилгээний төрөл сонгоно уу:</h4>
+
+                <input type="radio" id="Чих, ам, хоолой" name="choose" value="Чих, ам, хоолой">
+                <label for="Чих, ам, хоолой">Чих, ам, хоолой</label><br>
+
+                <input type="radio" id="Хөл, Гар" name="choose" value="Хөл, Гар">
+                <label for="Хөл, Гар">Хөл, Гар</label><br>
+
+                <input type="radio" id="Сэтгэл зүй" name="choose" value="Сэтгэл зүй">
+                <label for="Сэтгэл зүй">Сэтгэл зүй</label>
+            </div>
+            <br>
+            <button type = "submit">Бүртгүүлэх</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>Бүртгүүлсэн таньд баярлалаа. Холбоо барих хаяг болон утасны дугаар</p>
+            <p> Харилцах утас: 95269453</p>
+            <p> Харилцах social хаягууд: </p>
+            <a href="https://github.com/muuuuuug" target="_blank">GitHub</a><br>
+            <a href="https://www.instagram.com/mmmuuuuuuggg/" target="_blank">Instagram</a>
+        </footer>
+    </body>
+    </html>
