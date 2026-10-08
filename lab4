@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Coding Competition 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="container">
+    <header class="header">
+      <h2>Coding Competition 2026-д бүртгүүлэх дараалал</h2>
+      <p>Төслөө амжилттай бүртгүүлэхийн тулд дараах 6 үе шатыг дарааллан бөглөнө үү.</p>
+    </header>
+
+    <div class="steps-grid">
+      <div class="step-card active">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <h3>Багийн мэдээлэл</h3>
+          <p>Багийн нэр, лого болон холбоо барих мэдээлэл.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <h3>Төслийн санаа</h3>
+          <p>Шийдвэрлэх асуудал ба товч танилцуулга.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <h3>Технологийн стек</h3>
+          <p>Ашиглах хэл, фрэймворк, сангууд.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          <h3>Гишүүдийн ур чадвар</h3>
+          <p>Багийн гишүүдийн гүйцэтгэх үүрэг.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">5</div>
+        <div class="step-text">
+          <h3>Портфолио & Link</h3>
+          <p>Өмнөх төслүүд болон GitHub хаяг.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">6</div>
+        <div class="step-text">
+          <h3>Баталгаажуулах</h3>
+          <p>Мэдээллээ шалгаад эцэслэн илгээнэ.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-layout">
+      
+      <div class="form-container">
+        <div class="form-title">
+          <h2>"БАГИЙН МЭДЭЭЛЭЛ"</h2>
+          <p>Багийн үндсэн мэдээллийг үнэн зөв, бүрэн бөглөж оруулна уу.</p>
+        </div>
+
+        <div class="form-group">
+          <label>Багийн лого хавсаргах (PNG, JPG):</label>
+          <small>Зөвшөөрөгдөх дээд хэмжээ: 5MB</small>
+          <input type="file" class="file-input">
+        </div>
+
+        <div class="form-group">
+          <label>Багийн нэр:</label>
+          <input type="text" placeholder="Жишээ нь: П.Баярт">
+        </div>
+
+        <div class="form-group">
+          <label>Багийн ахлагчийн утасны дугаар:</label>
+          <input type="text" placeholder="Утасны дугаараа оруулна уу">
+        </div>
+
+        <div>
+            <label for = "Багийн ахлагчийн нэр">Багийн нэр имэйл хаяг:</label>
+            <input type="text" id="Багийн ахлагчийн нэр" placeholder="нэрээ оруулна уу">
+        </div>
+
+        <div class="form-group">
+          <label>Тэмцээний ангилал сонгох:</label>
+          <select class="select-input">
+            <option>-- Ангилал сонгоно уу --</option>
+            <option>ICPC</option>
+            <option>Codeforces Contest</option>
+            <option>LeetCode Contest</option>
+            <option>Atcoder</option>
+            <option>HackerRank</option>
+          </select>
+        </div>
+
+        <button class="submit-btn">Үргэлжлүүлэх</button>
+      </div>
+
+        <div class="sidebar">
+         <div class="info-card">
+            <h3>Анхаарах заавар</h3>
+            <ul>
+            <li>Багийн сэдэв бусад багтай давхцахгүй байх.</li>
+            <li>Логог заавал (PNG) оруулна.</li>
+            <li>Бүх талбарыг бөглөсний дараа 'Үргэлжлүүлэх' дарна.</li>
+            <li>Үнэн зөв бөглөөгүй бол тэмцээнд оруулах боломжгүй.</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Зохион байгуулагч</h3>
+          <p><strong>Утас:</strong> 7711-8899</p>
+          <p><strong>И-мэйл:</strong> Coding competition 2026@event.mn</p>
+          <p><strong>Байршил:</strong> Улаанбаатар, Сүхбаатар дүүрэг</p>
+          <p><strong>github:</strong> <a href="https://github.com/muuuuuug" target="_blank">https://github.com/muuuuuug</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
