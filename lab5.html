@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo"><strong>Амтлаг хазалт</strong></div>
+        <nav>
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Нүүр</a></li>
+                <li><a href="#menu">Цэс</a></li>
+                <li><a href="#about">Бидний тухай</a></li>
+                <li><a href="#contact">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Амтат хоол, сайхан орчин</h1>
+                <p>Тав тухыг мэдрүүлж, тансаг амтыг мэдрээрэй.</p>
+                <p class="btn">Ширээ захиалах</p>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2>Манай алдартай хоолнууд</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Стейк</h3>
+                    <p>Шүүслэг үхрийн махтай тусгай амтлагчтай стейк.</p>
+                    <span class="price">45,000₮</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Пицца</h3>
+                    <p>Бяслаг болон амтлагчаар баялаг Итали пицца.</p>
+                    <span class="price">28,000₮</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Цезарь салат</h3>
+                    <p>Шинэ ногоо болон тахианы махтай амтат салат.</p>
+                    <span class="price">18,000₮</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Суши</h3>
+                    <p>Тунгалаг загас болон цагаан будаа бүхий Япон хоол.</p>
+                    <span class="price">35,000₮</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Бургер</h3>
+                    <p>Шинэхэн ногоо болон амтлаг соустай бургер.</p>
+                    <span class="price">22,000₮</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Паста</h3>
+                    <p>Томато болон амтлагчаар баялаг Итали паста.</p>
+                    <span class="price">25,000₮</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="about-section">
+            <h2>Бидний тухай</h2>
+            <p>Бид үйлчлүүлэгчиддээ хамгийн чанартай орц найрлагаар хийсэн амттай хоолыг найрсаг үйлчилгээ, тав тухтай орчинд санал болгож байна.</p>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Холбоо барих</h3>
+                <p> Улаанбаатар хот, Баянгол дүүрэг 27-р хороо хэрмэс чанх урд талын барилгын 6 давхарт</p>
+                <p> Утас: +976 95269453</p>
+                <a href="https://github.com/muuuuuug/web-development-lab.git">Github хаяг</a>
+            </div>
+            <div class="footer-col">
+                <h3>Ажиллах цагийн хуваарь</h3>
+                <p>Даваа - Ням: 09:00 - 23:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+        
+        btn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
