@@ -9,7 +9,7 @@
 <body>
 
   <header class="header">
-    <h1>Зургийн Цомог Портал</h1>
+    <div class="logo">Зургийн Цомог Портал</div>
     <div class="controls">
       <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
       <button id="flip-btn" class="btn">🔄 3D Flip Card</button>
@@ -18,52 +18,99 @@
 
   <main class="container">
     
-    <section class="gallery">
-      <h2>Зургийн Цомог</h2>
+    <!-- 3D Flip Card Gallery Section -->
+    <section class="menu-section">
+      <h2>Зургийн Цомог (3D Flip Effect)</h2>
       <div class="gallery-grid">
-        <div class="gallery-item" style="--i: 1" tabindex="0">
-          <img src="img/photo1.jpg" alt="Зураг 1">
-          <p>Байгалийн зураг 1</p>
+        
+        <!-- Карт 1 -->
+        <div class="gallery-item flip-card" style="--i: 1" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo1.jpg" alt="Зураг 1">
+              <p>Байгалийн зураг 1</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Дэлгэрэнгүй 1</h3>
+              <p>Энэ бол байгалийн үзэсгэлэнт газар 1-ийн тухай тайлбар мэдээлэл.</p>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item" style="--i: 2" tabindex="0">
-          <img src="img/photo2.jpg" alt="Зураг 2">
-          <p>Байгалийн зураг 2</p>
+
+        <!-- Карт 2 -->
+        <div class="gallery-item flip-card" style="--i: 2" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo2.jpg" alt="Зураг 2">
+              <p>Байгалийн зураг 2</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Дэлгэрэнгүй 2</h3>
+              <p>Энэ бол байгалийн үзэсгэлэнт газар 2-ын тухай тайлбар мэдээлэл.</p>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item" style="--i: 3" tabindex="0">
-          <img src="img/photo3.jpg" alt="Зураг 3">
-          <p>Байгалийн зураг 3</p>
+
+        <!-- Карт 3 -->
+        <div class="gallery-item flip-card" style="--i: 3" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo3.jpg" alt="Зураг 3">
+              <p>Байгалийн зураг 3</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Дэлгэрэнгүй 3</h3>
+              <p>Энэ бол байгалийн үзэсгэлэнт газар 3-ын тухай тайлбар мэдээлэл.</p>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item" style="--i: 4" tabindex="0">
-          <img src="img/photo4.jpg" alt="Зураг 4">
-          <p>Байгалийн зураг 4</p>
+
+        <!-- Карт 4 -->
+        <div class="gallery-item flip-card" style="--i: 4" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo4.jpg" alt="Зураг 4">
+              <p>Байгалийн зураг 4</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Дэлгэрэнгүй 4</h3>
+              <p>Энэ бол байгалийн үзэсгэлэнт газар 4-ийн тухай тайлбар мэдээлэл.</p>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item" style="--i: 5" tabindex="0">
-          <img src="img/photo5.jpg" alt="Зураг 5">
-          <p>Байгалийн зураг 5</p>
+
+        <!-- Карт 5 -->
+        <div class="gallery-item flip-card" style="--i: 5" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo5.jpg" alt="Зураг 5">
+              <p>Байгалийн зураг 5</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Дэлгэрэнгүй 5</h3>
+              <p>Энэ бол байгалийн үзэсгэлэнт газар 5-ын тухай тайлбар мэдээлэл.</p>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item" style="--i: 6" tabindex="0">
-          <img src="img/photo6.jpg" alt="Зураг 6">
-          <p>Байгалийн зураг 6</p>
+
+        <!-- Карт 6 -->
+        <div class="gallery-item flip-card" style="--i: 6" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo6.jpg" alt="Зураг 6">
+              <p>Байгалийн зураг 6</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Дэлгэрэнгүй 6</h3>
+              <p>Энэ бол байгалийн үзэсгэлэнт газар 6-ын тухай тайлбар мэдээлэл.</p>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
 
-    <section class="flip-section">
-      <h2>3D Flip Card Эффект</h2>
-      <div class="flip-card" id="myFlipCard">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h3>Нүүр тал</h3>
-            <p>Дээгүүр нь хулганаа авчирна уу эсвэл товчлуур дээр дарна уу.</p>
-          </div>
-          <div class="flip-card-back">
-            <h3>Ар тал</h3>
-            <p>3D Rotate & Backface Visibility эффект!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Мультимедиа хэсэг -->
     <section class="media-section">
       <h2>Мультимедиа & SVG</h2>
       
