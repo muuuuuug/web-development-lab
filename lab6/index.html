@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Галерей Портал - Лаб 6</title>
+  <title>Лаб 6</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="header">
-    <div class="logo">Зургийн Цомог Портал</div>
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Лого дүрс">
+        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+        <path d="M12 6v6l4 2"/>
+      </svg>
+      <span>Амтат Хазалт</span>
+    </div>
     <div class="controls">
       <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
       <button id="flip-btn" class="btn">🔄 3D Flip Card</button>
@@ -18,91 +24,84 @@
 
   <main class="container">
     
-    <!-- 3D Flip Card Gallery Section -->
     <section class="menu-section">
-      <h2>Зургийн Цомог (3D Flip Effect)</h2>
-      <div class="gallery-grid">
+      <h2>Онцгой хоолнууд</h2>
+      <div class="menu-grid">
         
-        <!-- Карт 1 -->
-        <div class="gallery-item flip-card" style="--i: 1" tabindex="0">
+        <div class="menu-item flip-card" style="--i: 1" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="img/photo1.jpg" alt="Зураг 1">
-              <p>Байгалийн зураг 1</p>
+              <p>Стейк</p>
             </div>
             <div class="flip-card-back">
-              <h3>Дэлгэрэнгүй 1</h3>
-              <p>Энэ бол байгалийн үзэсгэлэнт газар 1-ийн тухай тайлбар мэдээлэл.</p>
+              <h3>Steak set</h3>
+              <p>Шарсан амтат төмс болон стейк.</p>
             </div>
           </div>
         </div>
 
-        <!-- Карт 2 -->
-        <div class="gallery-item flip-card" style="--i: 2" tabindex="0">
+        <div class="menu-item flip-card" style="--i: 2" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="img/photo2.jpg" alt="Зураг 2">
-              <p>Байгалийн зураг 2</p>
+              <p>Амтат итали пицца</p>
             </div>
             <div class="flip-card-back">
-              <h3>Дэлгэрэнгүй 2</h3>
-              <p>Энэ бол байгалийн үзэсгэлэнт газар 2-ын тухай тайлбар мэдээлэл.</p>
+              <h3>Italy Pizza</h3>
+              <p>Энэ бол Италийн амтат пицца.</p>
             </div>
           </div>
         </div>
 
-        <!-- Карт 3 -->
-        <div class="gallery-item flip-card" style="--i: 3" tabindex="0">
+        <div class="menu-item flip-card" style="--i: 3" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="img/photo3.jpg" alt="Зураг 3">
-              <p>Байгалийн зураг 3</p>
+              <p>Цезар салад</p>
             </div>
             <div class="flip-card-back">
-              <h3>Дэлгэрэнгүй 3</h3>
-              <p>Энэ бол байгалийн үзэсгэлэнт газар 3-ын тухай тайлбар мэдээлэл.</p>
+              <h3>Caeser Salad</h3>
+              <p>Шинэхэн, хөнгөн амттай бөгөөд витамин, эслэгээр баялаг тул эрүүл хооллолтод тохиромжтой салат</p>
             </div>
           </div>
         </div>
 
-        <!-- Карт 4 -->
-        <div class="gallery-item flip-card" style="--i: 4" tabindex="0">
+        <div class="menu-item flip-card" style="--i: 4" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="img/photo4.jpg" alt="Зураг 4">
-              <p>Байгалийн зураг 4</p>
+              <p>Сyши</p>
             </div>
             <div class="flip-card-back">
-              <h3>Дэлгэрэнгүй 4</h3>
-              <p>Энэ бол байгалийн үзэсгэлэнт газар 4-ийн тухай тайлбар мэдээлэл.</p>
+              <h3>Sushi</h3>
+              <p>Уураг, Омега-3 тосны хүчлээр баялаг бөгөөд дэлхий даяар алдартай Япон хоол юм.</p>
             </div>
           </div>
         </div>
 
-        <!-- Карт 5 -->
-        <div class="gallery-item flip-card" style="--i: 5" tabindex="0">
+        <div class="menu-item flip-card" style="--i: 5" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="img/photo5.jpg" alt="Зураг 5">
-              <p>Байгалийн зураг 5</p>
+              <p>Бургер</p>
             </div>
             <div class="flip-card-back">
-              <h3>Дэлгэрэнгүй 5</h3>
-              <p>Энэ бол байгалийн үзэсгэлэнт газар 5-ын тухай тайлбар мэдээлэл.</p>
+              <h3>Burger</h3>
+              <p>Амттай, хурдан бэлтгэгддэг бөгөөд махнаас уураг, ногооноос витамин авдаг. Дэлхий даяар олон төрлийн бургер байдаг бөгөөд хамгийн алдартай нь cheeseburger буюу бяслагтай бургер юм.</p>
             </div>
           </div>
         </div>
 
-        <!-- Карт 6 -->
-        <div class="gallery-item flip-card" style="--i: 6" tabindex="0">
+        <div class="menu-item flip-card" style="--i: 6" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="img/photo6.jpg" alt="Зураг 6">
-              <p>Байгалийн зураг 6</p>
+              <p>Паста</p>
             </div>
             <div class="flip-card-back">
-              <h3>Дэлгэрэнгүй 6</h3>
-              <p>Энэ бол байгалийн үзэсгэлэнт газар 6-ын тухай тайлбар мэдээлэл.</p>
+              <h3>Pasta</h3>
+              <p>Нүүрс усаар баялаг тул эрч хүч өгдөг. Дэлхий даяар түгээмэл хэрэглэгддэг бөгөөд олон төрлийн амт, хэлбэртэй байдаг.</p>
             </div>
           </div>
         </div>
@@ -110,9 +109,8 @@
       </div>
     </section>
 
-    <!-- Мультимедиа хэсэг -->
     <section class="media-section">
-      <h2>Мультимедиа & SVG</h2>
+      <h2>Video</h2>
       
       <div class="video-container">
         <video controls poster="img/photo1.jpg">
@@ -122,16 +120,30 @@
           Таны хөтөч видео тоглуулахыг дэмжихгүй байна.
         </video>
       </div>
+    </section>
 
-      <div class="svg-container">
-        <p>Аюулгүй Inline SVG дүрс:</p>
-        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-        </svg>
+    <section class="map-section">
+      <h2>Байршил</h2>
+      <div class="iframe-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.8524177239616!2d106.9172223!3d47.9188889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDU1JzA4LjAiTiAxMDY1NScwMi4wIkU!5e0!3m2!1smn!2smn!4v1600000000000!5m2!1smn!2smn" 
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          title="Рестораны байршлын зураглал"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </section>
 
   </main>
+
+  <footer>
+    <p><a href="https://github.com/muuuuuug/web-development-lab.git" target="_blank">GitHub</a></p>
+    <p><a href="https://www.instagram.com/mmmuuuuuuggg" target="_blank">Instagram</a></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

@@ -92,7 +92,7 @@ header {
   color: var(--text-color);
 }
 
-.gallery-grid {
+.menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -112,7 +112,7 @@ header {
 }
 
 /* 3D Flip Card Styles for Gallery Items */
-.flip-card {
+.menu-item.flip-card {
   background-color: transparent;
   height: 280px;
   perspective: 1000px; /* 3D Space */
