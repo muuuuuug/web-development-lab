@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерей Портал - Лаб 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Зургийн Цомог Портал</h1>
+    <div class="controls">
+      <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
+      <button id="flip-btn" class="btn">🔄 3D Flip Card</button>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="gallery">
+      <h2>Зургийн Цомог</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" style="--i: 1" tabindex="0">
+          <img src="img/photo1.jpg" alt="Зураг 1">
+          <p>Байгалийн зураг 1</p>
+        </div>
+        <div class="gallery-item" style="--i: 2" tabindex="0">
+          <img src="img/photo2.jpg" alt="Зураг 2">
+          <p>Байгалийн зураг 2</p>
+        </div>
+        <div class="gallery-item" style="--i: 3" tabindex="0">
+          <img src="img/photo3.jpg" alt="Зураг 3">
+          <p>Байгалийн зураг 3</p>
+        </div>
+        <div class="gallery-item" style="--i: 4" tabindex="0">
+          <img src="img/photo4.jpg" alt="Зураг 4">
+          <p>Байгалийн зураг 4</p>
+        </div>
+        <div class="gallery-item" style="--i: 5" tabindex="0">
+          <img src="img/photo5.jpg" alt="Зураг 5">
+          <p>Байгалийн зураг 5</p>
+        </div>
+        <div class="gallery-item" style="--i: 6" tabindex="0">
+          <img src="img/photo6.jpg" alt="Зураг 6">
+          <p>Байгалийн зураг 6</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flip-section">
+      <h2>3D Flip Card Эффект</h2>
+      <div class="flip-card" id="myFlipCard">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Нүүр тал</h3>
+            <p>Дээгүүр нь хулганаа авчирна уу эсвэл товчлуур дээр дарна уу.</p>
+          </div>
+          <div class="flip-card-back">
+            <h3>Ар тал</h3>
+            <p>3D Rotate & Backface Visibility эффект!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-section">
+      <h2>Мультимедиа & SVG</h2>
+      
+      <div class="video-container">
+        <video controls poster="img/photo1.jpg">
+          <source src="video/clip.mp4" type="video/mp4">
+          <source src="video/clip.webm" type="video/webm">
+          <track src="video/clip.mn.vtt" kind="subtitles" srclang="mn" label="Монгол" default>
+          Таны хөтөч видео тоглуулахыг дэмжихгүй байна.
+        </video>
+      </div>
+
+      <div class="svg-container">
+        <p>Аюулгүй Inline SVG дүрс:</p>
+        <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
