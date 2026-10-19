@@ -111,7 +111,7 @@ header {
 .menu-item.flip-card {
   background-color: transparent;
   height: 280px;
-  perspective: 1000px; /* 3D Space */
+  perspective: 1000px;
   
   opacity: 0;
   animation: fadeInUp 0.6s ease forwards;
