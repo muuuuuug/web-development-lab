@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лаб 6</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Лого дүрс">
+        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+        <path d="M12 6v6l4 2"/>
+      </svg>
+      <span>Амтат Хазалт</span>
+    </div>
+    <div class="controls">
+      <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="menu-section">
+      <h2>Онцгой хоолнууд</h2>
+      <div class="menu-grid">
+        
+        <div class="menu-item flip-card" style="--i: 1" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo1.jpg" alt="Зураг 1">
+              <p>Стейк</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Steak set</h3>
+              <p>Шарсан амтат төмс болон стейк.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item flip-card" style="--i: 2" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo2.jpg" alt="Зураг 2">
+              <p>Амтат итали пицца</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Italy Pizza</h3>
+              <p>Энэ бол Италийн амтат пицца.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item flip-card" style="--i: 3" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo3.jpg" alt="Зураг 3">
+              <p>Цезар салад</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Caeser Salad</h3>
+              <p>Шинэхэн, хөнгөн амттай бөгөөд витамин, эслэгээр баялаг тул эрүүл хооллолтод тохиромжтой салат</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item flip-card" style="--i: 4" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo4.jpg" alt="Зураг 4">
+              <p>Сyши</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Sushi</h3>
+              <p>Уураг, Омега-3 тосны хүчлээр баялаг бөгөөд дэлхий даяар алдартай Япон хоол юм.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item flip-card" style="--i: 5" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo5.jpg" alt="Зураг 5">
+              <p>Бургер</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Burger</h3>
+              <p>Амттай, хурдан бэлтгэгддэг бөгөөд махнаас уураг, ногооноос витамин авдаг. Дэлхий даяар олон төрлийн бургер байдаг бөгөөд хамгийн алдартай нь cheeseburger буюу бяслагтай бургер юм.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item flip-card" style="--i: 6" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/photo6.jpg" alt="Зураг 6">
+              <p>Паста</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Pasta</h3>
+              <p>Нүүрс усаар баялаг тул эрч хүч өгдөг. Дэлхий даяар түгээмэл хэрэглэгддэг бөгөөд олон төрлийн амт, хэлбэртэй байдаг.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="media-section">
+      <h2>Video</h2>
+      
+      <div class="video-container">
+        <video controls poster="img/photo7.jpg.jpg">
+          <source src="video/clip.mp4" type="video/mp4">
+          <source src="video/clip.webm" type="video/webm">
+          <track src="video/clip.mn.vtt" kind="subtitles" srclang="mn" label="Монгол" default>
+          Таны хөтөч видео тоглуулахыг дэмжихгүй байна.
+        </video>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h2>Байршил</h2>
+      <div class="iframe-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.8524177239616!2d106.9172223!3d47.9188889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDU1JzA4LjAiTiAxMDY1NScwMi4wIkU!5e0!3m2!1smn!2smn!4v1600000000000!5m2!1smn!2smn" 
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          title="Рестораны байршлын зураглал"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="https://github.com/muuuuuug/web-development-lab.git" target="_blank">GitHub</a></p>
+    <p><a href="https://www.instagram.com/mmmuuuuuuggg" target="_blank">Instagram</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
