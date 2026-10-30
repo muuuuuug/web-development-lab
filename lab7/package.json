@@ -1,0 +1,25 @@
+{
+  "name": "web-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+  "compile:sass": "sass scss/main.scss css/style.css --style compressed",
+  "watch:sass": "sass --watch scss/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muuuuuug/web-development-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/muuuuuug/web-development-lab/issues"
+  },
+  "homepage": "https://github.com/muuuuuug/web-development-lab#readme",
+  "devDependencies": {
+    "sass": "^1.107.0"
+  }
+}

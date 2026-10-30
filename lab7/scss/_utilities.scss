@@ -1,0 +1,28 @@
+@use "tokens" as *;
+@use "sass:map";
+
+// Spacing utility классуудыг @each ашиглан автоматаар үүсгэх
+$spacers: (
+  "sm": 8px,
+  "md": 16px,
+  "lg": 24px,
+  "xl": 32px
+);
+
+@each $key, $val in $spacers {
+  .m-#{$key} {
+    margin: $val;
+  }
+  .p-#{$key} {
+    padding: $val;
+  }
+}
+
+// Flex utility классууд
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}

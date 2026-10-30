@@ -1,0 +1,54 @@
+// Video, iframe, inline SVG and motion-related styles.
+
+.media-section,
+.map-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.iframe-container {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.iframe-container iframe {
+  display: block;
+  width: 100%;
+  min-height: 350px;
+  border: 0;
+}
+
+.svg-container {
+  margin-top: 2rem;
+}
+
+.icon-svg {
+  width: 48px;
+  height: 48px;
+  fill: var(--primary-color);
+  transition: transform var(--transition-speed);
+}
+
+.icon-svg:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

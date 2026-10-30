@@ -1,0 +1,13 @@
+// Pixels-ийг REM рүү хөрвүүлэх функц
+@function rem($px) {
+  @return ($px / 16px) * 1rem;
+}
+
+// Background өнгөнөөс хамаарч контраст текстийн өнгө тохируулах функц
+@function contrast($bg-color) {
+  @if (lightness($bg-color) > 50%) {
+    @return #000000;
+  } @else {
+    @return #ffffff;
+  }
+}

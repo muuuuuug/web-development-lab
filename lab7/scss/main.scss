@@ -1,0 +1,10 @@
+@forward "tokens";
+@use "tokens" as *;
+@use "mixins" as *;
+@use "functions" as *;
+
+// Partials файлуудаа оруулах
+@use "base";
+@use "cards";
+@use "media";
+@use "utilities";
